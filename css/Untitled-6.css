@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top  , darkblue, rgb(74, 74, 134) , rgb(66, 66, 163));
+    display: grid;
+    grid-template-columns: repeat( 10 , 1fr);
+    grid-template-rows: 150px 50px 1fr;
+    grid-template-areas: "W W W W W W W W W W" "Q Q Q Q Q Q Q Q Q Q" "F F F F F F F F F F";
+}
+
+#divy_00{
+    grid-area:W ;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+#divy_00 h1{
+    margin-left: 30px;
+    margin-top: 10px;
+
+
+}
+#divy_00 button{
+    float: right;
+    background:whitesmoke;
+    border: none;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+#divy_01{
+    grid-area:Q ;
+}
+
+#divy_01 h1{
+    font-family: 'New Tegomin', serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+#divy_02{
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-area: F;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+}
+
+#divy_02 > div{
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+}
+#divy_02 #divy_03 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+#divy_02 #divy_03 p , h3 , p{
+    margin-left: 90px;
+    color: antiquewhite;
+    margin-top: 7px;
+}
+
+#divy_02 #divy_04 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_05.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#divy_02 #divy_05 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_06.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#divy_02 #divy_06 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_02.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#divy_02 #divy_07 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_03.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#divy_02 #divy_08 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_01.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#divy_02 #divy_09 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_08.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#divy_02 #divy_10 div{
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4000px;
+    background-image: url("../Images/download_07.png");
+    background-position: center;
+    background-size: cover;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+#divy_02 div:hover{
+    background-color: antiquewhite;
+}
+#divy_02 div:hover > p , #divy_02 div:hover > h3 , #divy_02 #divy_03:hover > p{
+    color: red;
+}
+
+#divy_02 div:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 90%) inset;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 90%) inset;
+    transform-origin: center;
+    animation: hinge 3s;
+}
+
+@keyframes hinge {
+    100% , 20%{
+        transform: rotate(360deg) scale(1.3,1.3);
+    }
+}
